@@ -1,0 +1,234 @@
+<html>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+<body>
+
+    <div class="header"> 
+        <img src="images/summifyLogoLight.png" id="summary-logo" alt="Summary Logo">
+        <div class="external-links-parent">
+            <a id="toggle-mode"><img src="images/darkModeIcon.png" id="modeIcon" alt="Toggle Mode"></a>
+            <a href="https://github.com/pallavikhare31" target="_blank"><img src="images/githubLogo.png"  alt="Youtube Summerizer Repository"></a>
+        </div>
+    </div>
+
+    <div class="settings-parent">
+        <div class="length-parent">
+            <select name="length" id="summary-length-select" >
+                <option value="Brief" id="brief-summary">Brief Summary</option>
+                <option value="Detailed" id="detailed-summary">Detailed Summary</option>
+            </select>
+            <label for="length" id="summary-length-label">Length</label>                
+        </div>
+        <div class="summary-type-parent">       
+            <select name="type" id="summary-type-select">
+               <!-- Additional Languages --> 
+<option value="English">English (US/UK)</option> <!-- 1 - Widely spoken in the US, UK, Canada, Australia, etc. -->                                                                                                                             
+<option value="Hindi">हिन्दी</option> <!-- 2 - India --> 
+<option value="Marathi">Marathi</option> <!-- 3 - India -->
+
+<!-- A -->
+<option value="Adivasi">आदिवासी</option> <!-- 4 - India -->
+<option value="Angika">अंगिका</option> <!-- 5 - India -->
+<option value="Anufo">अनुफो</option> <!-- 6 - India -->
+<option value="Assamese">অসমীয়া</option> <!-- 7 - India -->
+<option value="Awadhi">अवधी</option> <!-- 8 - India -->
+
+<!-- B -->
+<option value="Bagri">बागरी</option> <!-- 9 - India -->
+<option value="Banjara">बंजारा</option> <!-- 10 - India -->
+<option value="Bengali">বাংলা</option> <!-- 11 - India -->
+<option value="Bhojpuri">भोजपुरी</option> <!-- 12 - India -->
+<option value="Bhatri">भाटरी</option> <!-- 13 - India -->
+<option value="Bodo">बोडो</option> <!-- 14 - India -->
+<option value="Bundeli">बुंदेली</option> <!-- 15 - India -->
+
+<!-- C -->
+<option value="Chalukya">ಚಾಲುಕ್ಯ</option> <!-- 16 - India -->
+<option value="Chhattisgarhi">छत्तीसगढ़ी</option> <!-- 17 - India -->
+<option value="Coorgi">ಕೊಡವಾ</option> <!-- 18 - India -->
+
+<!-- D -->
+<option value="Dakhini">दखिनी</option> <!-- 19 - India -->
+<option value="Dhangar">Dhangar</option> <!-- 20 - A dialect spoken by the Dhangar community in Maharashtra -->
+<option value="Dhegla">धेगला</option> <!-- 21 - India --> 
+<option value="Dhundhari">धुंधारी</option> <!-- 22 - India -->
+<option value="Dogri">डोगरी</option> <!-- 23 - India -->
+
+<!-- E -->
+<option value="Ede">एडे</option> <!-- 24 - India -->
+<option value="Eranadu">एरणाडू</option> <!-- 25 - India -->
+
+<!-- G -->
+<option value="Garhwali">गढ़वाली</option> <!-- 26 - India -->
+<option value="Garo">Garo</option> <!-- 27 - Spoken in Meghalaya -->
+<option value="Goan Konkani">गोवा कोंकणी</option> <!-- 28 - India -->
+<option value="Gondi">गोंडी</option> <!-- 29 - India -->
+<option value="Gujarati">ગુજરાતી</option> <!-- 30 - India -->
+<option value="Gujari">Gujari</option> <!-- 31 - A language spoken by the Gujjar community in parts of Jammu & Kashmir, Rajasthan, and Haryana -->
+<option value="Gurmukhi">ਗੁਰਮੁਖੀ</option> <!-- 32 - India -->
+
+<!-- H -->
+<option value="Haryanvi">हरियाणवी</option> <!-- 33 - India -->
+<option value="Hilly Hindi">हिली हिन्दी</option> <!-- 34 - India -->
+<option value="Hindi (Brajbhasha)">हिन्दी (ब्रजभाषा)</option> <!-- 35 - India -->
+<option value="Hmar">ह्मार</option> <!-- 36 - India -->
+<option value="Hodi">होदी</option> <!-- 37 - India -->
+
+<!-- I -->
+<option value="Idu">इदू</option> <!-- 38 - India -->
+<option value="India English">Indian English</option> <!-- 39 - India -->
+<option value="Irula">इरुला</option> <!-- 40 - India -->
+
+<!-- J -->
+<option value="Jammu">जम्मू</option> <!-- 41 - India -->
+
+<!-- K -->
+<option value="Kachchhi">કચ્છી</option> <!-- 42 - India -->
+<option value="Kamba">कंबा</option> <!-- 43 - India -->
+<option value="Kannada">ಕನ್ನಡ</option> <!-- 44 - India -->
+<option value="Kashmiri">کشميري</option> <!-- 45 - India -->
+<option value="Khandeshi">Khandeshi</option> <!-- 46 - Spoken in parts of Maharashtra -->
+<option value="Khasi">Khasi</option> <!-- 47 - Spoken in Meghalaya -->
+<option value="Konkani">कोंकणी</option> <!-- 48 - India -->
+<option value="Kodava">ಕೊಡವ</option> <!-- 49 - India -->
+<option value="Korku">कोरकू</option> <!-- 50 - India -->
+<option value="Kurukh">कुरुख</option> <!-- 51 - India -->
+<option value="Kurmanji">Kurmanji</option> <!-- 52 - A dialect of Kurdish spoken by some communities in parts of India -->
+
+<!-- L -->
+<option value="Ladakhi">लदाखी</option> <!-- 53 - India -->
+<option value="Ladhakhi">लधाखी</option> <!-- 54 - India -->
+<option value="Lahu">लाहू</option> <!-- 55 - India -->
+<option value="Lepcha">Lepcha</option> <!-- 56 - Spoken primarily in Sikkim and Darjeeling -->
+<option value="Lhomi">लहोमी</option> <!-- 57 - India -->
+<option value="Lohar">लोहार</option> <!-- 58 - India -->
+
+<!-- M -->
+<option value="Magahi">मगही</option> <!-- 59 - India -->
+<option value="Maithili">मैथिली</option> <!-- 60 - India -->
+<option value="Manipuri">মণিপুরি</option> <!-- 61 - India -->
+<option value="Maring">मरींग</option> <!-- 62 - India -->
+<option value="Marwari">मारवाड़ी</option> <!-- 63 - India -->
+<option value="Meitei">মৈতৈ</option> <!-- 64 - India -->
+<option value="Mewari">मेवाड़ी</option> <!-- 65 - India -->
+<option value="Mising">मिसिंग</option> <!-- 66 - India -->
+<option value="Mizo">मिजो</option> <!-- 67 - India -->
+<option value="Mundari">मुंडारी</option> <!-- 68 - India -->
+
+<!-- N -->
+<option value="Naga">नागा</option> <!-- 69 - India -->
+<option value="Naga (Konyak)">नागा (कोंयाक)</option> <!-- 70 - India -->
+<option value="Nagpuri">नागपुरी</option> <!-- 71 - India -->
+<option value="Nanduri">नंदुरी</option> <!-- 72 - India -->
+<option value="Nayini">Nayini</option> <!-- 73 - Spoken by the Nayini communities in Tamil Nadu and Kerala -->
+<option value="Nepali">नेपाली</option> <!-- 74 - India -->
+
+<!-- O -->
+<option value="Odia">ଓଡ଼ିଆ</option> <!-- 75 - India -->
+<option value="Odiya">ओडिया</option> <!-- 76 - India -->
+<option value="Ongan">Ongan</option> <!-- 77 - Spoken in parts of Maharashtra and Madhya Pradesh -->
+
+<!-- P -->
+<option value="Pali">पाळि</option> <!-- 78 - India -->
+<option value="Pahari">पहाड़ी</option> <!-- 79 - India -->
+<option value="Parsi">पारसी</option> <!-- 80 - India -->
+<option value="Prakrit">प्राकृत</option> <!-- 81 - India -->
+<option value="Puni">पुनी</option> <!-- 82 - India -->
+<option value="Punjabi">ਪੰਜਾਬੀ</option> <!-- 83 - India -->
+
+<!-- R -->
+<option value="Rajasthani">राजस्थानी</option> <!-- 84 - India -->
+<option value="Rajbanshi">राजबंशी</option> <!-- 85 - India -->
+<option value="Rohingya">रोहिंग्या</option> <!-- 86 - India -->
+
+<!-- S -->
+<option value="Santali">संताली</option> <!-- 87 - India -->
+<option value="Sanskrit">संस्कृत</option> <!-- 88 - India -->
+<option value="Sindhi">सिन्धी</option> <!-- 89 - India -->
+<option value="Sinhala">සිංහල</option> <!-- 90 - Sri Lanka -->
+<option value="Sikkimese">सिक्किमी</option> <!-- 91 - India -->
+<option value="Shina">शीना</option> <!-- 92 - India -->
+<option value="Saurashtra">सौराष्ट्र</option> <!-- 93 - India -->
+
+<!-- T -->
+<option value="Tamang">तामांग</option> <!-- 94 - India -->
+<option value="Tamil">தமிழ்</option> <!-- 95 - India -->
+<option value="Telugu">తెలుగు</option> <!-- 96 - India -->
+<option value="Tharu">थारू</option> <!-- 97 - India -->
+<option value="Tigur">तिगुर</option> <!-- 98 - India -->
+<option value="Tigri">Tigri</option> <!-- 99 - Spoken by a small community in Maharashtra and Madhya Pradesh -->
+<option value="Toda">तोड़ा</option> <!-- 100 - India -->
+<option value="Tulu">ತುಳು</option> <!-- 101 - India -->
+<option value="Tripuri">त्रिपुरी</option> <!-- 102 - India -->
+
+<!-- U -->
+<option value="Udmurt">उडमर्ट</option> <!-- 103 - India -->
+<option value="Urdu">اردو</option> <!-- 104 - India -->
+<option value="Urhobo">उरहोबो</option> <!-- 105 - India -->
+<option value="Urumi">उरुमी</option> <!-- 106 - India -->
+
+<!-- V -->
+<option value="Vaiphei">वैपहेई</option> <!-- 107 - India -->
+<option value="Veddah">वेधाह</option> <!-- 108 - Sri Lanka -->
+<option value="Vidarbha">विदर्भी</option> <!-- 109 - India -->
+<option value="Vishwa">विश्वा</option> <!-- 110 - India -->
+
+<!-- W -->
+<option value="वाणी">वाणी</option> <!-- 111 - Spoken by a small community in parts of Maharashtra and Madhya Pradesh -->
+<option value="Warli">वारली</option> <!-- 112 - India -->
+<option value="Warlpiri">वार्लपिरी</option> <!-- 113 - India -->
+<option value="Wazir">वज़ीर</option> <!-- 114 - India -->
+
+<!-- Y -->
+<option value="Yaro">यारो</option> <!-- 115 - India -->
+<option value="Yemba">येम्बा</option> <!-- 116 - India -->
+
+<!-- Z -->
+<option value="Zarma">जारमा</option> <!-- 117 - India -->
+<option value="Zulu">जुलू</option> <!-- 118 - India -->
+
+                 
+<option value="spanish">Español</option>
+<option value="french">Français</option>
+<option value="german">Deutsch</option>
+<option value="italian">Italiano</option>
+<option value="portuguese">Português</option>
+<option value="chinese">中文</option>
+<option value="japanese">日本語</option>
+<option value="russian">Русский</option>
+<option value="arabic">عربى</option>
+<option value="korean">한국어</option>
+
+            </select>
+            <label for="type" id="language-label">Language</label>
+        </div>
+    </div>
+
+    <div id="summary-parent-js" class="summary-parent">
+        <textarea class="scroll" id="text" data-provide="markdown" placeholder="Your summary will appear here!" readonly></textarea>
+        <div class="summary-details">  
+
+            <div class="summary-information">
+                <p id="word-count-label">0 words</p>
+                <button id="copy-text-button"><img src="images/copy_icon.png" alt="Copy Icon"></button>
+            </div>
+            <div id="webpage-js" class="webpage">
+                <img src="https://www.google.com/s2/u/0/favicons?domain=ksdaslkdasd.com" id="favicon-image" alt="Favicon">
+                <p id="page-link">Unable to identify public page link</p>
+            </div>
+
+        </div>
+    </div>
+
+    <script src="gui-changes.js"></script>
+    <script src="../../dist/bundle2.js"></script>
+
+    <button id="summarizeBtn" value="Summarize">
+        <p id="button-text">Summarize</p>
+        <img id="loading-gif" src="images/loading.gif" alt="loading">
+    </button>
+    <script src="../../dist/bundle.js"></script>
+</body>
+
+
+</html>

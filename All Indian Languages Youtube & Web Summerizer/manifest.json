@@ -1,0 +1,17 @@
+{
+
+    "manifest_version": 3,
+    "name": "All-Indian-Languages YouTube & Web Summerizer",
+    "description": "Summarize Webpages and YouTube videos with ease!",
+    "version": "3.0",
+    "permissions": ["scripting", "activeTab", "storage"],
+    "background": {
+        "service_worker": "src/background/background.js"
+    },
+    "action": {
+        "default_popup": "src/popup/summify.html",
+        "default_icon": "src/popup/images/summary_icon.png"
+    },
+    "host_permissions": ["https://youtube.com/*"]
+    
+} 
